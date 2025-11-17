@@ -13,7 +13,17 @@ export const UI = {
 
         UI.container.appendChild(clon);
         
-    }
+    },
+
+    changeColor : (id, colorOn, colorOff) => {
+    const tecla = document.getElementById(id);
+    tecla.style.backgroundColor = colorOn;
+
+    setInterval(() => {
+        tecla.style.backgroundColor = colorOff;
+    }, 2000);
+}
+
 
 
 }

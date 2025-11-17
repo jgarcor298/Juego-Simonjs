@@ -1,11 +1,23 @@
-import { UI} from "./UI.js";
-import { TimeHandler } from "./TimeHandler.js";
+// import { UI} from "./UI.js";
+// import { TimeHandler } from "./TimeHandler.js";
 
-UI.init({
-    container: "container",
-    template: "template",
-});
+// UI.init({
+//     container: "container",
+//     template: "template",
+// });
 
-TimeHandler.timeAdder(UI, 10, 3000);
-TimeHandler.timeAdder(UI, 10, 2000);
-console.log(TimeHandler.status());
+// TimeHandler.timeAdder(UI, 10, 3000);
+// TimeHandler.timeAdder(UI, 10, 2000);
+// console.log(TimeHandler.status());
+
+
+const control = {
+    Colors: [],
+    addColors: (id, colorOn, colorOff) => {
+        
+    }
+}
+
+control.addColors('tecla', 'blue', 'yellow');
+
+console.log(control.Colors.pop());
