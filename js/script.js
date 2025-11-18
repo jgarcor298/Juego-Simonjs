@@ -1,4 +1,6 @@
-// import { UI} from "./UI.js";
+import { UI} from "./UI.js";
+import { GameSimon } from "./GameSimon.js";
+
 // import { TimeHandler } from "./TimeHandler.js";
 
 // UI.init({
@@ -10,14 +12,13 @@
 // TimeHandler.timeAdder(UI, 10, 2000);
 // console.log(TimeHandler.status());
 
+const game = new GameSimon();
 
-const control = {
-    Colors: [],
-    addColors: (id, colorOn, colorOff) => {
-        
-    }
-}
+game.addColors('red', 'yellow');
+game.addColors('blue', 'green');
 
-control.addColors('tecla', 'blue', 'yellow');
 
-console.log(control.Colors.pop());
+
+game.setColors('tecla1', 0);
+
+
