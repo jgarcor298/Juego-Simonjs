@@ -1,5 +1,6 @@
-import { UI} from "./UI.js";
+import { UI } from "./UI.js";
 import { GameSimon } from "./GameSimon.js";
+
 
 // import { TimeHandler } from "./TimeHandler.js";
 
@@ -17,8 +18,28 @@ const game = new GameSimon();
 game.addColors('red', 'yellow');
 game.addColors('blue', 'green');
 
+const secuencia = async () => {
+
+    let tecla1 = () => new Promise((resolve, reject) => {
+        game.setColors('tecla1', 0);
+        console.log("Se ha cambiado el color de tecla1.");
+        resolve(1);
+    });
+
+    await tecla1();
+
+    let tecla2 = () => new Promise((resolve, reject) => {
+        game.setColors('tecla2', 1);
+        console.log("Se ha cambiado el color de tecla1.");
+        resolve(1);
+    });
+
+   await tecla2();
+}
+
+secuencia();
 
 
-game.setColors('tecla1', 0);
+
 
 

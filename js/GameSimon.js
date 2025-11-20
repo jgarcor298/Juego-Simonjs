@@ -26,9 +26,5 @@ export class GameSimon {
         UI.changeColor(id, color.colorOn, color.colorOff);
     }
 
-    playSequence = (secuencia) => {
-            
-        let secuencia = secuencia.replace(" ", "").split(",");
-
-    }
+ 
 }

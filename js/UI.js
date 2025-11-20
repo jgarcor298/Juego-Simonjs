@@ -1,6 +1,8 @@
 export const UI = {
-    container:null,
-    template:null,
+//    container:null,
+//    template:null,
+    secuencia: [],
+    listButtons: [],
 
     init: (config) =>{
         UI.container = document.getElementById(config.container);
